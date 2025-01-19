@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // 問題ないためそのまま
+    "module": "esnext", // Reactでは一般的にESモジュールを推奨
+    "lib": ["dom", "dom.iterable", "esnext"], // Reactで必要なライブラリを指定
+    "jsx": "react-jsx", // React 17以降では "react-jsx" を使用
+    "strict": true, // 厳格モードを有効にする
+    "esModuleInterop": true, // CommonJS互換を有効にする
+    "skipLibCheck": true, // ライブラリ型チェックをスキップ
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を厳密に確認
+    "moduleResolution": "node", // Node.jsのモジュール解決を利用
+    "resolveJsonModule": true, // JSONファイルのインポートを許可
+    "isolatedModules": true, // ファイルごとに独立してトランスパイル
+    "noEmit": true // ファイル出力を無効化（開発中の設定）
+  },
+  "include": ["src"], // srcフォルダ内をコンパイル対象に含める
+  "exclude": ["node_modules"] // node_modulesを除外
+}
